@@ -1,0 +1,24 @@
+{
+  "name": "showcase",
+  "version": "0.0.1",
+  "description": "Faster way to render & interact react & vue3 components with command line interface.",
+  "main": "index.js",
+  "bin": {
+    "showcase": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "akira-cn",
+  "license": "MIT",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^6.1.1",
+    "esbuild": "^0.14.21",
+    "open": "^8.4.0",
+    "puppeteer": "^13.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vue": "^3.2.31"
+  }
+}
