@@ -21,6 +21,15 @@
 
 ### 命令行模式
 
+```bash
+> npm i -g @xitu/showcase;
+> sc --input app.vue;
+```
+
+访问 http://localhost:3000
+
+**命令行参数**
+
 | 参数 | 类型 | 说明 |
 | --- | --- | --- |
 | --input | string | 要加载的组件文件 |
@@ -32,4 +41,71 @@
 
 ### NodeJS
 
+**示例**
+
+```js
+const Showcase = require('@xitu/showcase');
+
+const showcase = new Showcase({
+  client: {
+    output: './out.png',
+    repl: true,
+  },
+  serverOptions: {
+    servedir: 'test',
+  },
+});
+
+showcase.showComponent({
+  path: './test/my-component.jsx',
+  open: true,
+});
+```
+
 ### 用作OJ裁判
+
+通过提供的repl接口可以用来处理OJ，比如：
+
+```
+//PREPEND BEGIN
+const Showcase = require('@xitu/showcase');
+
+const content = `
+//PREPEND END
+
+//TEMPLATE BEGIN
+//在这里添加组件代码
+
+//TEMPLATE END
+
+//APPEND BEGIN
+`.trim();
+
+const showcase = new Showcase({
+  silent: true,
+  client: {
+    repl: true,
+  },
+});
+
+showcase.showComponent({
+  path: './test/my-component.jsx',
+  open: true,
+});
+//APPEND END
+```
+
+这样在OJ的case里面可以这样写：
+
+1.in
+
+```
+click button
+```
+
+1.out
+
+```
+一段base64图片代码
+```
+
