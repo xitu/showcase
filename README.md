@@ -6,6 +6,7 @@
 
 - 提供命令行快速加载[Vue](https://vuejs.org/)、[React](https://reactjs.org/)和[SpriteJS](http://spritejs.com/)组件运行于浏览器端，不需要安装额外的编译环境和依赖。
 - 内置[esbuild](https://esbuild.github.io/)构建环境，支持模块依赖的自动构建。
+- 内置[styled-components](https://github.com/styled-components/styled-components)作为默认css组件化支持。
 - 基于[Puppeteer](https://github.com/puppeteer/puppeteer)提供自动渲染能力，输出图片。
 - 提供灵活的命令行repl接口进行事件交互。
 - 灵活的设计，可以方便地扩展其他组件。
