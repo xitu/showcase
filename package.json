@@ -4,7 +4,8 @@
   "description": "Faster way to render & interact react & vue3 components with command line interface.",
   "main": "index.js",
   "bin": {
-    "showcase": "bin/index.js"
+    "showcase": "bin/index.js",
+    "sc": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
