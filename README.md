@@ -22,8 +22,8 @@
 ### 命令行模式
 
 ```bash
-> npm i -g @xitu/showcase;
-> sc --input app.vue;
+> npm i -g jjsc;
+> jjsc --input app.vue;
 ```
 
 访问 http://localhost:3000
@@ -44,7 +44,7 @@
 **示例**
 
 ```js
-const Showcase = require('@xitu/showcase');
+const Showcase = require('jjsc');
 
 const showcase = new Showcase({
   client: {
