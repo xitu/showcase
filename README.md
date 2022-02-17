@@ -21,6 +21,15 @@
 
 ### 命令行模式
 
+| 参数 | 类型 | 说明 |
+| --- | --- | --- |
+| --input | string | 要加载的组件文件 |
+| --output | string | 使用puppeteer作客户端时输出的结果图片文件 |
+| --events | string | 模拟用户操作的事件序列 |
+| --servedir | string | 运行的http服务的根目录（会影响vue模块加载路径) |
+| --client | boolean | 是否启用puppeteer客户端 |
+| --repl | boolean | 使用启用repl交互，如启用，puppeteer 客户端也会自动启用 |
+
 ### NodeJS
 
 ### 用作OJ裁判
