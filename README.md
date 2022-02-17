@@ -68,7 +68,7 @@ showcase.showComponent({
 
 ```
 //PREPEND BEGIN
-const Showcase = require('@xitu/showcase');
+const Showcase = require('jjsc');
 
 const content = `
 //PREPEND END
