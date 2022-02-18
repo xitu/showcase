@@ -9,6 +9,9 @@ if(args.repl) {
 } else if(args.client) {
   opts.client = {output: args.output};
 }
+if(args.servedir) {
+  opts.serverOptions = {servedir: args.servedir};
+}
 const showcase = new Showcase(opts);
 showcase.showComponent({
   path: args.input,
