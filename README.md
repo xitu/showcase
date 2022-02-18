@@ -4,7 +4,7 @@
 
 ## 特性
 
-- 提供命令行快速加载[Vue](https://vuejs.org/)和[React](https://reactjs.org/)组件运行于浏览器端，不需要安装额外的编译环境和依赖。
+- 提供命令行快速加载[Vue3](https://vuejs.org/)和[React](https://reactjs.org/)组件运行于浏览器端，不需要安装额外的编译环境和依赖。
 - 内置[esbuild](https://esbuild.github.io/)构建环境，支持模块依赖的自动构建。
 - 内置[styled-components](https://github.com/styled-components/styled-components)作为默认css组件化支持。
 - 基于[Puppeteer](https://github.com/puppeteer/puppeteer)提供自动渲染能力，输出图片。
