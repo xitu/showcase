@@ -17,6 +17,7 @@
     "command-line-usage": "^6.1.1",
     "esbuild": "^0.14.21",
     "esbuild-plugin-vue-next": "^0.1.4",
+    "etag": "^1.8.1",
     "open": "^8.4.0",
     "puppeteer": "^13.3.0",
     "react": "^17.0.2",
