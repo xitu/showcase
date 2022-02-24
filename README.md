@@ -33,10 +33,11 @@
 | 参数 | 类型 | 说明 |
 | --- | --- | --- |
 | --input | string | 要加载的组件文件 |
-| --output | string | 使用puppeteer作客户端时输出的结果图片文件 |
 | --servedir | string | 运行的http服务的根目录（会影响vue模块加载路径) |
-| --client | object | 启用puppeteer客户端 |
-| --repl | boolean | 使用启用repl交互，如启用，puppeteer 客户端也会自动启用 |
+| --client.output | string | 启用puppeteer客户端，将截图保存到 output 文件 |
+| --client.repl | boolean | 使用启用repl交互，如启用，puppeteer 客户端也会自动启用 |
+| --client.events | string | 启用并发送事件给puppeteer客户端 |
+| --client.delay | number | 启用puppeteer客户端，delay毫秒之后再截图，默认值300 |
 
 ### NodeJS
 
