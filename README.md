@@ -61,7 +61,7 @@ showcase.showComponent({
 });
 ```
 
-### As Online Judger
+### For Online Judger
 
 Use REPL interface, for example:
 
