@@ -6,7 +6,7 @@ Quickly load Vue, React components via command line.
 
 ## Features
 
-- Provide command line to quickly load [Vue3](https://vuejs.org/) and [React](https://reactjs.org/) components running on the browser. No need to install any compilation environment and dependencies.
+- Provide command line to quickly load [Vue3](https://vuejs.org/) and [React](https://reactjs.org/) components running on the browser. No need to install any build tools and dependencies.
 - Built-in [esbuild](https://esbuild.github.io/) support.
 - Built-in [styled-components](https://github.com/styled-components/styled-components) as default css module support for react components.
 - Use [Puppeteer](ttps://github.com/puppeteer/puppeteer) to provide automatic rendering capability to output images.
