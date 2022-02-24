@@ -1,47 +1,46 @@
 # Showcase
 
-通过命令行快速加载 Vue、React、SpriteJS 组件。
+[中文说明](README-CN.md)
 
-## 特性
+Quickly load Vue, React components via command line.
 
-- 提供命令行快速加载[Vue3](https://vuejs.org/)和[React](https://reactjs.org/)组件运行于浏览器端，不需要安装额外的编译环境和依赖。
-- 内置[esbuild](https://esbuild.github.io/)构建环境，支持模块依赖的自动构建。
-- 内置[styled-components](https://github.com/styled-components/styled-components)作为默认css组件化支持。
-- 基于[Puppeteer](https://github.com/puppeteer/puppeteer)提供自动渲染能力，输出图片。
-- 提供灵活的命令行repl接口进行事件交互。
-- 灵活的设计，可以方便地扩展其他组件。
+## Features
 
-## 用途
+- Provide command line to quickly load [Vue3](https://vuejs.org/) and [React](https://reactjs.org/) components running on the browser. No need to install any compilation environment and dependencies.
+- Built-in [esbuild](https://esbuild.github.io/) support.
+- Built-in [styled-components](https://github.com/styled-components/styled-components) as default css module support for react components.
+- Use [Puppeteer](ttps://github.com/puppeteer/puppeteer) to provide automatic rendering capability to output images.
+- Provides a flexible command line repl interface for event interaction.
 
-- 学习和研究Vue、React等前端组件框架，一键运行，自动加载，不用部署复杂的开发环境。
-- 通过命令行参数，可生成图片，用于自动化UI测试。
-- 通过命令行repl接口可以进行事件交互，输出结果图片数据，可用于OJ(OnlineJudge)平台的自动判卷。
+## Usage
 
-## 使用方法
+- Study Vue and React without Build Tools.
+- With command line parameters, generate images for automated UI testing.
+- The command line REPL interface allows event interaction and output of result data, which can be used in the OJ (OnlineJudge) platforms.
 
-### 命令行模式
+### The command lines
 
 ```bash
 > npm i -g jjsc;
 > jjsc --input app.vue;
 ```
 
-访问 http://localhost:3000
+Visit http://localhost:3000
 
-**命令行参数**
+**Arguments**
 
-| 参数 | 类型 | 说明 |
+| args | type | details |
 | --- | --- | --- |
-| --input | string | 要加载的组件文件 |
-| --servedir | string | 运行的http服务的根目录（会影响vue模块加载路径) |
-| --client.output | string | 启用puppeteer客户端，将截图保存到 output 文件 |
-| --client.repl | boolean | 使用启用repl交互，如启用，puppeteer 客户端也会自动启用 |
-| --client.events | string | 启用并发送事件给puppeteer客户端 |
-| --client.delay | number | 启用puppeteer客户端，delay毫秒之后再截图，默认值300 |
+| --input | string | The component to rendered |
+| --servedir | string | Http server root |
+| --client.output | string | Puppeteer's snapshot filename |
+| --client.repl | boolean | Enable REPL |
+| --client.events | string | Send events to puppeteer page |
+| --client.delay | number | Delay milliseconds before take snapshot |
 
 ### NodeJS
 
-**示例**
+**Example**
 
 ```js
 const Showcase = require('jjsc');
@@ -62,9 +61,9 @@ showcase.showComponent({
 });
 ```
 
-### 用作OJ裁判
+### As Online Judger
 
-通过提供的repl接口可以用来处理OJ，比如：
+Use REPL interface, for example:
 
 ```
 //PREPEND BEGIN
@@ -74,7 +73,7 @@ const content = `
 //PREPEND END
 
 //TEMPLATE BEGIN
-//在这里添加组件代码
+//Add component code here...
 
 //TEMPLATE END
 
@@ -95,7 +94,7 @@ showcase.showComponent({
 //APPEND END
 ```
 
-这样在OJ的case里面可以这样写：
+In testcase files：
 
 1.in
 
@@ -106,6 +105,6 @@ click button
 1.out
 
 ```
-一段base64图片代码
+The base64 image data...
 ```
 
