@@ -88,7 +88,7 @@ const showcase = new Showcase({
 });
 
 showcase.showComponent({
-  path: './test/my-component.jsx',
+  content,
   open: true,
 });
 //APPEND END
