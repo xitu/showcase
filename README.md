@@ -65,7 +65,7 @@ showcase.showComponent({
 
 Use REPL interface, for example:
 
-```
+```js
 //PREPEND BEGIN
 const Showcase = require('jjsc');
 
@@ -88,7 +88,7 @@ const showcase = new Showcase({
 });
 
 showcase.showComponent({
-  path: './test/my-component.jsx',
+  content,
   open: true,
 });
 //APPEND END
