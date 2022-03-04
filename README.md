@@ -21,7 +21,7 @@ Quickly load Vue, React components via command line.
 ### The command lines
 
 ```bash
-> npm i -g show-case;
+> npm i -g showcase-core;
 > showcase --input app.vue;
 ```
 
@@ -43,7 +43,7 @@ Visit http://localhost:3000
 **Example**
 
 ```js
-const Showcase = require('show-case');
+const Showcase = require('showcase-core');
 
 const showcase = new Showcase({
   client: {
@@ -67,7 +67,7 @@ Use REPL interface, for example:
 
 ```js
 //PREPEND BEGIN
-const Showcase = require('show-case');
+const Showcase = require('showcase-core');
 
 const content = `
 //PREPEND END

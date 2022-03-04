@@ -22,7 +22,7 @@
 ### 命令行模式
 
 ```bash
-> npm i -g show-case;
+> npm i -g showcase-core;
 > showcase --input app.vue;
 ```
 
@@ -44,7 +44,7 @@
 **示例**
 
 ```js
-const Showcase = require('show-case');
+const Showcase = require('showcase-core');
 
 const showcase = new Showcase({
   client: {
@@ -68,7 +68,7 @@ showcase.showComponent({
 
 ```js
 //PREPEND BEGIN
-const Showcase = require('show-case');
+const Showcase = require('showcase-core');
 
 const content = `
 //PREPEND END
