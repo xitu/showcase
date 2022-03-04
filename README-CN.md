@@ -22,8 +22,8 @@
 ### 命令行模式
 
 ```bash
-> npm i -g jjsc;
-> jjsc --input app.vue;
+> npm i -g show-case;
+> showcase --input app.vue;
 ```
 
 访问 http://localhost:3000
@@ -44,7 +44,7 @@
 **示例**
 
 ```js
-const Showcase = require('jjsc');
+const Showcase = require('show-case');
 
 const showcase = new Showcase({
   client: {
@@ -66,9 +66,9 @@ showcase.showComponent({
 
 通过提供的repl接口可以用来处理OJ，比如：
 
-```
+```js
 //PREPEND BEGIN
-const Showcase = require('jjsc');
+const Showcase = require('show-case');
 
 const content = `
 //PREPEND END
